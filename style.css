@@ -1,3 +1,135 @@
 .pruneBackground {
     background-color: #3b3a53;
 }
+
+.hobbycard {
+  min-width: 280px;
+}
+
+.pbcard {
+  min-width: 271px;
+}
+
+.personalien {
+  min-width: auto;
+}
+
+.startcolumnwidth {
+  width: 200px;
+}
+
+@media only screen and (max-width: 760px)  {
+  .startcolumnwidth {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 575px)  {
+  .messages {
+    max-width: 430px;
+  }
+}
+
+@media only screen and (max-width: 430px)  {
+  body {
+    font-size: 0.9rem;
+  }
+  .startcolumnwidth {
+    width: 80px;
+  }
+  .messages {
+    width: auto !important;
+  }
+  .messages div {
+    width: fit-content !important;
+    height: auto !important;
+  }
+  .messages .is-loading {
+    width: 4rem !important;
+    height: 2.25rem !important;
+  }
+  .messages span {
+    width: auto !important;
+    height: auto !important;
+  }
+  .card-body {
+    padding: 0.7rem;
+  }
+  .table td {
+   padding: 0.2rem; 
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+
+/*Chatbot Animation*/
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.messages {
+    overflow: auto;
+    width: 120vw;
+    max-height: 100vh;
+    padding: 1rem .9rem;
+  }
+  .bubble {
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 0 .5rem 0;
+    padding: .5rem .85rem;
+    line-height: 1.25rem;
+    border-radius: 1.25rem;
+    transform-origin: 0 100%;
+    vertical-align: middle;
+    transition: border-radius .25s ease-out .075s;
+    max-width: 400px;
+  }
+  .bubble.left.cornered {
+    border-bottom-left-radius: 0;
+  }
+  .bubble.left {
+    background: rgba(206,206,206,0.50);
+  }
+  .bubble:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -.5rem;
+    width: .5rem;
+    height: .5rem;
+    background-image: url(assets/corner.svg);
+    background-size: .5rem .5rem;
+    background-position: .5rem 0;
+    background-repeat: no-repeat;
+    transition: background-position .15s ease-in;
+  }
+  .bubble.cornered:after {
+    background-position: 0 0;
+  }
+  .bubble span {
+    display: block;
+  }
+  .bubble span.message {
+    opacity: 0;
+  }
+  .bubble a {
+    color: #0076FF;
+  }
+  .bubble .loading {
+    position: absolute;
+    width: 3rem;
+    font-size: 2rem;
+    line-height: 1rem;
+  }
+  .bubble .loading b {
+    display: inline-block;
+    color: rgba(0,0,0,.5);
+  }
+  

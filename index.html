@@ -2,6 +2,10 @@
 <html lang="de">
 
 <head>
+    <!--ToDo-->
+    <!--https://github.com/aFarkas/lazysizes
+    Video einbinden
+    pushen-->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,25 +19,22 @@
 
 <body>
     <div>
-        <nav class="navbar pruneBackground">
-            <div class="float-right">
-                <img src="assets/logo.png" height="40" alt="Pax Logo">
-            </div>
-        </nav>
+        <div class="d-flex flex-row-reverse bd-highlight pruneBackground">
+            <img src="assets/logo.png" height="40" alt="Pax Logo" class="m-2">
+        </div>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4 text-center">Nils Schell Lebenslauf</h1>
             </div>
         </div>
-        <div class="container">
-            <h1 class="display-4 text-center">Chat Bot</h1>
+        <div class="container messages">
         </div>
-        <div class="container">
+        <div class="container content mt-4 invisible">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Persönliche Daten</h5>
+                    <h5 class="card-title">Personalien</h5>
                     <div class="card-group">
-                        <div class="card">
+                        <div class="card personalien mt-2 border">
                             <div class="card-body">
                                 <table class="table table-borderless">
                                     <tbody>
@@ -61,82 +62,249 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="assets/bsp.png" class="card-img-top" alt="...">
+                        <div class="card pbcard mt-2 border">
+                            <img loading="lazy" src="assets/pb gross.png" class="card-img-top" alt="...">
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h5 class="card-title">Motivationsschreiben</h5>
+                    <p class="card-text"><strong>Ich bin Lehrling des Jahres 2020, weil</strong> ich meinem Lehrbetrieb
+                        etwas zurückgeben will, indem ich mit diesem Wettbewerb den Interessierten zeige, dass Pax ein
+                        super Lehrbetrieb ist und ich meinen Beruf mit voller Begeisterung anderen zeigen will.</br> Als ich
+                        14 Jahre alt war, fing ich an mich zu bewerben. Ich wusste noch nicht genau welche Lehre ich
+                        meistern möchte. Eines war aber klar, ich wollte nach der Sekundarschule nicht ins Gymnasium
+                        gehen, sondern etwas lernen das mich jeden Tag aufs Neue fasziniert. Ich habe 5 verschiedene
+                        Schnupperlehrern in 5 verschiedenen Berufe gemacht und mich am Schluss entschieden, dass mir der
+                        Beruf Applikationsentwickler mit Abstand am meisten gefällt.</br> In diesem Beruf liegen auch meine
+                        Stärken. Ich kann komplexe logische Zusammenhänge einfach verstehen und habe ein sehr gutes
+                        Vorstellungsvermögen. Mit diesen zwei Stärken fällt mir das Programmieren leicht und ich komme
+                        bei Aufträgen schnell voran. Ich habe bereits viele Applikationen entwickelt welche für Pax
+                        einen Mehrwert bieten oder an einem grossen Projekt mitgearbeitet. Ich habe nicht nur Fachliches
+                        gelernt, sondern wurde sehr selbständig und ambitioniert. Ich habe mich in den letzten 3 Jahren
+                        sehr stark entwickelt. In diesem Beruf muss man sich ständig weiterbilden und Neues lernen.
+                        Wegen meiner Begeisterungsfähigkeit fäll mir das leicht. Das ist nicht nur in der
+                        Informatikbranche so, sondern auch in der Freizeit.</br> In meiner Freizeit bin ich viel unterwegs
+                        und erlebe so viel. Ich spiele zum Beispiel seit 10 Jahren in einem Unihockey Verein
+                        (Waldenburger Eagles U21), unternehme übers Wochenende mit meinen Kollegen etwas oder bringe mir
+                        neues Wissen bei. Sei es auf hohem Niveau zu fotografieren oder 100 Tausend Follower auf
+                        Instagram aufzubauen. Ich nehme die Herausforderungen an.</br> Dass mir den Beruf gefällt, ich sehr
+                        motiviert bin und grosses Engagement zeige, ist das einte. Jedoch gibt es noch einen anderen
+                        sehr wichtigen Punkt, und zwar ist das der Lehrbetrieb. Ich muss ganz ehrlich sagen, dass Pax
+                        einfach einen super Lehrbetrieb ist. Ich habe als ich die Lehre angefangen habe nie gedacht,
+                        dass alle Leute in meiner Abteilung sooo sympathisch und hilfsbereit sind. Mit so tollen
+                        Personen zusammen zu arbeiten macht das Ganze noch cooler. Sei es die Gespräche an den Pax
+                        Events oder die spannenden Töggeli-Matches...</p>
                 </div>
             </div>
             <div class="card mt-5">
                 <div class="card-body">
                     <h5 class="card-title">Meine Freizeitaktivitäten</h5>
                     <div class="card-group">
-                        <div class="card">
-                            <img src="assets/bsp.png" class="card-img-top" alt="...">
+                        <div class="card hobbycard mt-2 border">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="assets/20200916_175307@3.jpg">
+                            <source media="(min-width: 800px)" srcset="assets/20200916_175307@2.jpg">
+                            <source media="(min-width: 400px)" srcset="assets/20200916_175307.jpg">
+                            <img loading="lazy" src="assets/20200916_175307@2.jpg" class="card-img-top" alt="...">
+                        </picture>
+                            <img loading="lazy" src="assets/bsp.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Unihockey</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Ich spiele seit 10 Jahren Unihockey. Zurzeit spiele ich im
+                                    Waldenburg Eagels U21 Team. Obwohl ich einen sehr langen Trainingsweg habe (ca. 1h
+                                    pro Weg), lasse ich nie ein Training ausfallen (ich habe die grösste
+                                    Trainingsbresenz im Team). Der Sport mach mir sehr viel Spass wegen der
+                                    Geschwindigkeit, Spielintelligenz und dem coolen Team.</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="assets/bsp.png" class="card-img-top" alt="...">
+                        <div class="card hobbycard mt-2 border">
+                            <img loading="lazy" src="assets/bsp.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Ski fahren</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Ich fahre Ski seit ich stehen kann. Mein Vater hat es mir als ich 4
+                                    Jahre alt war beigebracht. Bis heute fahre ich jedes Jahr Ski und habe mir zum Glück
+                                    noch nie etwas gebrochen. Letzte Saison bin ich insgesamt 3 Wochen Ski gefahren. Es
+                                    gibt viele Gründe wieso mir dieses Ski fahren so gefällt... Ich liebe die
+                                    Winterzeit, den Schnee und das Fahrgefühl.</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="assets/bsp.png" class="card-img-top" alt="...">
+                        <div class="card hobbycard mt-2 border">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="assets/SR101328@3.jpg">
+                                <source media="(min-width: 800px)" srcset="assets/SR101328@2.jpg">
+                                <source media="(min-width: 400px)" srcset="assets/SR101328.jpg">
+                                <img loading="lazy" src="assets/SR101328@2.jpg" class="card-img-top" alt="...">
+                            </picture>
                             <div class="card-body">
                                 <h5 class="card-title">Fotografieren</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Seit 2 Jahren fotografiere ich auf hohem Niveau. Mein bester
+                                    Kollege hat mir viel gezeigt und beigebracht.</p>
+                                <button type="button" class="btn btn-dark" data-toggle="collapse"
+                                    href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">Mehr Bilder...</button>
                             </div>
+                        </div>
+                    </div>
+                    <div class="collapse mt-3" id="collapseExample">
+                        <div class="card card-body">
+                            weitere Bilder...
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card mt-5">
                 <div class="card-body">
-                    <h5 class="card-title">Aubildung</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h5 class="card-title">Über mich</h5>
+                    <div class="ml-3">
+                        <ul>
+                            <li>Im 4. Lehrjahr als Informatiker/in EFZ Applikationsentwicklung</li>
+                            <li>Kenntnisse über viele Technologien</li>
+                            <li>mehrere kleine Applikationen entwickelt</li>
+                            <li>6 Monaten an einem grossen Projekt mitgearbeitet</li>
+                            <li>Gute Kenntnisse in der Web Entwicklung</li>
+                            <li>Gute Kenntnisse von Java</li>
+                            <li>Gute Kenntnisse in IT Architektur und Application deployment</li>
+                            <li>Gute Kenntnisse mit Datenbanken</li>
+                            <li>Gute Kenntnisse im Testing (JUNIT5, OPA5)</li>
+                            <li>Gute Kenntnisse von Scrum und git</li>
+                            <li>Kenntnisse in weiteren Technologien (SAP, SAPUI5, Python, Docker, GitHub)</li>
+                            <li>2 Jahre Erfahrung im Fotografieren</li>
+                            <li>2.5 Jahre Erfahrung mit Social Media</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="card mt-5">
                 <div class="card-body">
-                    <h5 class="card-title">Fähigkeiten</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h5 class="card-title">Ausbildung</h5>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td class="startcolumnwidth">Aug. 2017 bis heute</td>
+                                <td>Lehre als Informatiker/in EFZ Applikationsentwicklung
+                                    Pax, Schweizerische Lebensversicherungs-Gesellschaft AG
+                                    (zurzeit im 4. Lehrjahr)</td>
+                            </tr>
+                            <tr>
+                                <td>2013 bis 2015</td>
+                                <td>6. – 9. Sekundarschule Niveau P, Frenkendorf</td>
+                            </tr>
+                            <tr>
+                                <td>2008 bis 2013</td>
+                                <td>1. - 5. Primarschule, Frenkendorf</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h5 class="card-title">Berufserfahrung</h5>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td class="startcolumnwidth">Aug. 2017 bis heute</td>
+                                <td><strong>Lehre als Informatiker/in EFZ Applikationsentwicklung
+                                        Pax, Schweizerische Lebensversicherungs-Gesellschaft AG
+                                        (zurzeit im 4. Lehrjahr)</strong></br></br>
+                                    Schule:</br>
+                                    <ul class="ml-3">
+                                        <li>Grundlagen der Informatik (+ aprentas)</li>
+                                        <li>Grundlagen von Java, JavaScript, PHP, HTML und CSS</li>
+                                        <li>Grundlagen der Datenbanktechniken</li>
+                                        <li>Grundlagen in der Projektplanung</li>
+                                        <li>Grundlagen im Testing</li>
+                                    </ul>
+                                    Hauptaufgaben in der Pax:</br>
+                                    <ul class="ml-3">
+                                        <li>SAP Grundlagen, 0.5 Jahre</br>(Web Dynpro, oData, Datenbanken-Migration,
+                                            Datenanalyse, Customizing Tabellen)</li>
+                                        <li>SAPUI5 Entwicklung, 1.5 Jahre</br>(SAP Cloud, SAP Theme, mehrere kleine
+                                            Tools entwickelt, an grossem Projekt gearbeitet)</li>
+                                        <li>Java Entwicklung, 1 Jahr</br>(an grossem Projekt gearbeitet, JUNIT5, Maven,
+                                            REST, git, Docker, Kubernetes, GitHub Actions)</li>
+                                        <li>JavaScript Entwicklung, 2 Jahre</br>(Vue, React, Angular, Ionic, jQuery,
+                                            node.js, Docker)</li>
+                                        <li>Web Entwicklung, 2 Jahre</br>(HTML, CSS, Theming, Multimedia, Bootstrap,
+                                            Responsive Design)</li>
+                                        <li>Python Entwicklung, 0.5 Jahre</br>(FLASK, REST, CORS, ENVs, Docker)</li>
+                                        <li>Testing, 0.5 Jahre</br>(JUNIT5, OPA5)</li>
+                                        <li>Architektur, 0.5 Jahre</br>(Prinzipien, NFAs, Azure Cloud, Docker, Rancher,
+                                            Kubernetes, GitHub Actions)</li>
+                                        <li>Tools (JetBrains Tools, Visual Studio Code)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h5 class="card-title">Sprachen</h5>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Deutsch</td>
+                                <td>Muttersprache</td>
+                            </tr>
+                            <tr>
+                                <td>Englisch</td>
+                                <td>Berufskenntnisse, Schulkenntnisse (Niveau B2)</td>
+                            </tr>
+                            <tr>
+                                <td>Französisch</td>
+                                <td>Schulkenntnisse (Niveau B2)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="card mt-5">
                 <div class="card-body">
                     <h5 class="card-title">Referenzen</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Till Weisser</td>
+                                <td>till.weisser@pax.ch</td>
+                            </tr>
+                            <tr>
+                                <td>Alice Däppen</td>
+                                <td>alice.däppen@pax.ch</td>
+                            </tr>
+                            <tr>
+                                <td>Damien Wieser</td>
+                                <td>damien.wieser@pax.ch</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="card mt-5 mb-5">
                 <div class="card-body">
                     <h5 class="card-title">Bewerbungsvideo</h5>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JPT3bFIwJYA?rel=0"
-                            allowfullscreen></iframe>
+                        <iframe loading="lazy" class="embed-responsive-item" src="https://drive.google.com/file/d/1pMDAXlV6SvSjcw1d9DVo43cc8kACewtf/preview"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!--My Scripts-->
+    <script src="anime.js"></script>
+    <script src="chatbot.js"></script>
 
     <!-- Optional JavaScript -->
+    <!--anime.js-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js" integrity="sha512-LfB+BcvR3zBt7ebVskhSWiSbEUiG3p5EcCprkieldsKhBeR6wpnLi0VpWC2GNgVGWP2n/skO8Bx2oKNjUhXCkw==" crossorigin="anonymous"></script>-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
