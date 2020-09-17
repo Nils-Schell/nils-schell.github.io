@@ -2,6 +2,14 @@
     background-color: #3b3a53;
 }
 
+.invisibleStart {
+  display: none;
+}
+
+.wintervideo {
+  width: 100%;
+}
+
 .hobbycard {
   min-width: 280px;
 }
@@ -57,6 +65,12 @@
   }
   .table td {
    padding: 0.2rem; 
+  }
+  .mt-4 {
+    margin-top: 1rem !important;
+  }
+  .mt-5 {
+    margin-top: 1rem !important;
   }
 }
 

@@ -2,7 +2,7 @@ window.onload = function() {
 
     var contentDiv = document.querySelector('.content');
     $(contentDiv).hide();
-    $(contentDiv).removeClass("invisible")
+    $(contentDiv).removeClass("invisibleStart")
 
     var messagesEl = document.querySelector('.messages');
     var typingSpeed = 25;
